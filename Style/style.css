@@ -41,44 +41,161 @@ body{
 }
 
 .cabeçalho{
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    min-height: 100px;
     background-color: var(--cor4);
-    color: white;
     font-family: var(--fonte-destaque);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+}
+
+.titulo_cabeçalho{
+    padding: 10px;
+    color:white;
 }
 
 .titulo_c_secundario{
     font-family: var(--fonte-padrao);
     font-weight: normal;
     font-size: 16px;
+    color: white;
 }
 
 .menu-list{
     background-color: var(--cor5);
     color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
 }
 
 .menu{
     display: flex;
-    flex-direction: row;
 }
 
+
 .list{
-    margin: 10px;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.list:hover {
+    background-color: var(--cor3);
+    border-radius: 2px;
+    transition-duration: 0.5s;
 }
 
 .titulo_principal{
     font-family: var(--fonte-android);
+    color:var(--cor4)
 }
 
 .titulo_secundario{
     font-family: var(--fonte-android);
+    font-size: 20px;
+    background-color: var(--cor2);
+    color: var(--cor5)
 }
 
 .principal{
+      /* tive que ajustar o tamanho da fonte, pois o text-align:justify faz com que minha linha antes da primeira foto dos dandrois ficasse muito espaçada, se alguem souber alguma outra melhor solução por favor ma avise com issue ou com um code, em algum pixels ainda fica muito espaçado (RESOLVIDO O PROBLEMA ERA A FALTA DO FECHAMENTO DA TAG <P> AO FINAL DO PARAGRAFO. 
+      */
+    font-size: 19px;
+    padding: 10px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color: white;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.493)
+}
+
+.principal p{
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1em;
+    line-height: 1em;
+}
+
+.principal p > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor5);
+    background-color:var(--cor0);
+
+}
+
+.principal p > a:hover{
+    background-color: var(--cor5);
+    color: var(--cor0);
+}
+
+.bug-droid{
+    max-width: 400px; /*é o mais ideal neste caso do que % no valor*/
+    margin: auto;
+    display: block;
+}
+
+.principal img{
+    width: 100%;
+}
+
+.video{
+    background-color: var(--cor5);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.493);
+    padding-bottom: 57%;
+    position: relative;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.Extra{
+    background-color: var(--cor1);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.493)
+}
+
+.terceiro_titulo{
+    text-align: center;
+    background-color: var(--cor5);
+    color: var(--cor0);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
+    background-image: linear-gradient(to left, var(--cor5), var(--cor0));
+    padding: 7px;
+    margin: -15px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.list-android{
+    list-style: none;
+    columns: 2;
 }
 
 .rodape{
     background-color: var(--cor5);
+    text-align: center;
+    font-size: 14px;
     color: white;
+}
+
+.rodape > p > a {
+    text-decoration: none;
+    color: var(--cor0)
+}
+
+.rodape > p > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);
 }
