@@ -120,7 +120,6 @@ body{
 }
 
 .principal p > a {
-    font-weight: bold;
     text-decoration: none;
     color: var(--cor5);
     background-color:var(--cor0);
